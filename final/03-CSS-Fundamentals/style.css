@@ -1,18 +1,16 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
+  color: gray;
+  font-size: 16px;
   font-family: sans-serif;
 }
 
-article header p {
-  font-style: italic;
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
-  color: blue;
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
@@ -46,10 +44,71 @@ footer p {
   font-size: 16px;
 }
 
+#author {
+  font-style: italic;
+}
+
 article header p {
   font-style: italic;
 }
 
-header p {
+#author {
   font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* border: 5px solid #1098ad; */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* article p:first-child {
+  color: red;
+} */
+
+/* Styling link */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline solid orangered;
 }
