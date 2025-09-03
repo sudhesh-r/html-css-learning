@@ -7,8 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flexbox</title>
   <style>
+    .el {
+      /* DEFAULTS: 
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      */
+      /* flex-basis: 200px;
+      flex-shrink: 0; */
+      flex: 0 0 200px;
+
+    }
+
     .el--1 {
       background-color: blueviolet;
+
     }
 
     .el--2 {
@@ -34,6 +47,7 @@
 
     .el--7 {
       background-color: yellow;
+      /* flex-grow: 2; */
     }
 
     .el--8 {
@@ -45,12 +59,12 @@
       font-family: sans-serif;
       background-color: #ddd;
       font-size: 40px;
-      margin: 40px;
+      /* margin: 40px; */
 
       /* FLEXBOX */
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: flex-start;
     }
   </style>
 </head>
@@ -64,7 +78,7 @@
     <div class="el el--5">amazing</div>
     <div class="el el--6">languages</div>
     <div class="el el--7">to</div>
-    <div class="el el--8">learn</div>
+
   </div>
 </body>
 
